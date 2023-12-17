@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Index mass body</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="imt_menu">
+            <div class="weight">
+                <p>Введите ваш вес</p>
+                <input type="number" placeholder="кг" name="weight" id="inp1" class="form-input">
+            </div>
+
+            <div class="height">
+                <p>Введите ваш рост</p>
+                <input type="number" placeholder="см" name="height" id="inp2">
+            </div> 
+
+            <div class="button">
+                <div id="error"></div>
+                <button onclick="calculation()" class="btn">Расчитать</button>
+            </div>
+            <div id="imt_res"></div>
+            <div id="imt_res_parametrs"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

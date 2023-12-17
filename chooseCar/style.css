@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,500;6..12,600;6..12,700;6..12,800&family=Poppins:wght@100;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background: linear-gradient(0.25turn, #000, #1e0d03);
+    box-shadow: 0 5px 20px 0 #fff;
+    z-index: 1;
+}    
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 140px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-menu li a::after {
+    background-color: #d9d41d; 
+    display: block;
+    content: "";
+    height: 3px; 
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.navbar-menu li a:hover:after, .navbar-menu li a:focus:after {
+    width: 100%;
+}
+
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-content {
+    position: relative;
+    height: 91vh;
+    background-image: url('img/main_photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-end;
+    height: 91vh;
+}
+
+.text-block {
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px 0 #d9d41d;
+    height: 40vh;
+    width: 40vw;
+    position: absolute;
+    top: 14em;
+    right: 4em;
+    padding: 20px;
+    background-image: url('img/m22.jpg');
+    background-size: 135px;
+    background-position: center center;
+    
+}
+
+.text-block h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.text-block h3 {
+    color: #fff;
+    padding: 1.6em;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.btns {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.btns button {
+    cursor: pointer;
+    padding: 15px 25px;
+    margin: 0 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 0 5px 20px 0 #483bfd;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    background-color: #483bfd;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btns button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btns button a:hover {
+    color: #000;
+}
+
+.btns button:hover {
+    transform: scale(1.1);
+    background-color: #d9d41d;
+    color: #000;
+    box-shadow: 0 5px 20px 0 #d9d41d;
+}
+
+
+
+.second-container-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: #d0d0d0; */
+    background: linear-gradient(0.25turn, #04002a, #03004c);
+}
+
+.head-second-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 22px;
+    position: relative;
+    color: #fff;
+}
+
+
+.second-container-content {
+    display: flex;
+    flex-flow: column wrap;
+    height: 90vh;
+    
+}
+
+.basic-info1 {
+    height: 40vh;
+    width: 45%;
+    margin: 15px 0 10px 30px;
+    text-align: center;
+}
+
+.basic-info1 p {
+    font-size: 22px;
+    padding-top: 100px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.basic-info2 {
+    width: 45%;
+    height: 40vh;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.basic-info2 p {
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.basic-photo1 {
+    height: 40vh;
+    width: 45%;
+    margin: 50px 0 10px 30px;
+}
+
+.basic-photo2 {
+    height: 40vh;
+    width: 45%;
+    margin: 15px 0;
+}
+
+.basic-photo2 img {
+    width: 75%;
+    height: 40vh;
+    margin-left: 105px;
+    border-radius: 10px;
+}
+
+.basic-photo1 img {
+    width: 65%;
+    height: 40vh;
+    margin-left: 140px;
+    border-radius: 10px;
+}
